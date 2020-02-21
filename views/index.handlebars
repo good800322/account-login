@@ -1,0 +1,27 @@
+<div class="container py-5">
+  <div class="row align-item-center">
+    <div class="card col-6 offset-3" style="width: 18rem;">
+      <div class="card-body" id="card">
+        <h5 class="card-title">Account Login</h5>
+        <form action="/" method="POST">
+          <div class="form-group">
+            <label for="exampleInputEmail1"></label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1"></label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+              name="password">
+          </div>
+          <button type="submit" class="btn btn-secondary my-2 ">Submit</button>
+        </form>
+        {{#if warn}}
+        <div class="alert alert-info" role="alert">
+          {{warn}}
+        </div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>

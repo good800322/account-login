@@ -1,0 +1,10 @@
+#card{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+#card form{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
